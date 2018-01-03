@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Cute Slider - 3D and 2D HTML5 Image Slider</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="3d effect, 3d slideshow, android, banner rotator, canvas, content slider, css3, ios, ipad compatible, iphone compatible, mobile, slideshow, video slider, vimeo slider, youtube slider, 3d image slider,responsive slider,responsive slider, responsive banner rotator ,canvas 3d effect ,canvas 3d effect,3d effect in internet explorer,3d effect for ie " />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="images/fav.png" />
+		
+		<link rel="stylesheet" href="style/main.css?ver=2.1" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="style/home.css?ver=2.1.1" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="style/slider-style.css?ver=2" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+		
+		<script src="js/modernizr.js?ver=2" type="text/javascript" charset="utf-8"></script>
+		<script type='text/javascript'>
+			var CSSettings = {"pluginPath":"images"};
+		</script>
+		<script src="js/cute/cute.slider.js?ver=2.4.2" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cute/cute.transitions.all.js?ver=2.4.2" type="text/javascript" charset="utf-8"></script>
+		<script>
+			Cute.ModuleLoader.css3d_files  =  ['js/cute/cute.css3d.module.js?v2.4.2'];
+			Cute.ModuleLoader.canvas_files =  ['js/cute/cute.canvas.module.js'];
+			Cute.ModuleLoader.dom2d_files  =  ['js/cute/cute.2d.module.js'];
+		</script>
+		
+		<script src="js/respond.min.js?ver=2" type="text/javascript" charset="utf-8"></script>
+		
+		
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-20400688-6']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+		
+		<style>
+		.badge{
+			position:fixed;
+			right:0px;
+			top:140px;
+			-webkit-transition: all 1400ms;
+			-moz-transition: all 1400ms;
+			-ms-transition: all 1400ms;
+			transition: all 1400ms;
+			z-index:1000;
+		}
+		
+		.badge.badgehide{
+			right:-180px;
+		}
+		
+		@media (max-width: 1160px) {
+			.badge{ display:none; }
+		}
+
+		
+		</style>
+	</head>
+
+	<body>
+	
+		<div id="badge" class="badge badgehide">
+		<a href="http://www.masterslider.com/" target="_blank" title="Master Slider, Responsive Touch Swipe Slider"><img alt="Master Slider" src="images/ms-badge.png"></a>
+		</div>
+		<div class="alert" id="alert">Remove this frame for better performance otherwise it may flashes sometimes.</div>
+		<div id="fb-root"> </div>
+			
+		<div class="pageContainer" id="wrapper">
+			<div class="bg"><img src="images/bg.png" /></div>
+			<div class="spliter"> </div>
+			<section class="sliderSection">
+				<div id="slider-wrapper">
+				<div id="cute-slider" class="cute-slider" data-width="800" data-height="350" data-vpwidth="900" data-vpheight="400">
+					<ul data-type="slides">
+						<li data-delay="4" data-trans3d="tr2,tr20,tr57" data-trans2d="tr1,tr14,tr26">
+							<img src="images/1.jpg" data-thumb="images/thumbs/1.jpg	"/>
+							<ul data-type="captions">
+								<li class="caption caption1" data-effect="fade">
+									3D &amp; 2D effects
+								</li>
+								<li class="caption caption2" data-delay="300" data-effect="fade">
+									+100 PRESET TRANSITIONS
+								</li>
+							</ul>
+						</li>
+						<li data-delay="4" data-trans3d="tr4,tr21,tr62" data-trans2d="tr5,tr23,tr30">
+							<img src="cute-theme/blank.jpg" data-src="images/2.jpg" data-thumb="images/thumbs/2.jpg"/>
+							<ul data-type="captions">
+								<li class="caption caption3" data-effect="fade">
+									cross browser
+								</li>
+								<li class="caption caption4" data-delay="300" data-effect="fade">
+									DEVICE FRIENDLY
+								</li>
+							</ul>
+						</li>
+						<li data-delay="5" data-trans3d="tr17,tr46,tr64" data-trans2d="tr7,tr32,tr40">
+							<img src="cute-theme/blank.jpg" data-src="images/3.jpg" data-thumb="images/thumbs/3.jpg"/>
+							<div data-type="info" class="info1">
+								<div>
+									<h1 class="title">Tired of boring flat sliders?</h1>
+									<p class="text">
+										<a class="more-btn" href="?p=features" target="_blank">More features</a>
+										Looking for a unique slider? Here's what you want, with Cute Slider you will be able to show your slides with awesome 3D &amp; 2D transitions.
+									</p>
+								</div>
+								
+							</div>
+						</li>
+						<li data-delay="4" data-trans3d="tr8,tr19" data-trans2d="tr15,tr3,tr38">
+							<img src="cute-theme/blank.jpg" data-src="images/4.jpg" data-thumb="images/thumbs/4.jpg"/>
+							<ul data-type="captions">
+								<li class="caption caption5" data-effect="fade">
+									3 fallback levels
+								</li>
+								<li class="caption caption6" data-delay="300" data-effect="fade">
+									fully customizable
+								</li>
+							</ul>
+						</li>
+						<li data-delay="6" data-trans3d="tr10,tr49,tr58" data-trans2d="tr2,tr16,tr27">
+							<img src="cute-theme/blank.jpg" data-src="images/5.jpg" data-thumb="images/thumbs/5.jpg"/>
+							<div data-type="info" data-align="right" class="info2">
+								<span class="title">TRANSITION GALLERY</span>
+								<span class="subtitle">INCLUDED</span>
+								<span class="text">
+									Cute Slider comes with extremely rich transition gallery that provides the best way to browse through 100+ transitions.
+								</span>
+								<a class="more-btn" href="?p=features" target="_blank">More features</a>
+							</div>
+						</li>
+						<li data-delay="4" data-trans3d="tr11,tr61,tr46" data-trans2d="tr12,tr24,tr35">
+							<img src="cute-theme/blank.jpg" data-src="images/6.jpg" data-thumb="images/thumbs/6.jpg"/>
+							<ul data-type="captions">
+								<li class="caption caption7" data-effect="fade">
+									search engine optimized
+								</li>
+								<li class="caption caption8" data-delay="300" data-effect="fade">
+									OPTION TO SET LINK TO EACH SLIDE
+								</li>
+							</ul>
+						</li>
+						<li data-delay="7" data-trans3d="tr25,tr48,tr23" data-trans2d="tr29,tr20,tr41">
+							<img src="cute-theme/blank.jpg" data-src="images/7.jpg" data-thumb="images/thumbs/7.jpg"/>
+							<ul data-type="captions">
+								<li class="caption caption9" data-effect="fade">
+									YOUTUBE &amp; VIMEO
+								</li>
+								<li class="caption caption10" data-delay="300" data-effect="fade">
+									videos are supported
+								</li>
+							</ul>
+							<a data-type="video" href="http://player.vimeo.com/video/8540978" > </a>
+						</li>
+						<li data-delay="4" data-trans3d="tr24,tr32,tr1" data-trans2d="tr9,tr18,tr39">
+							<img src="cute-theme/blank.jpg" data-src="images/8.jpg" data-thumb="images/thumbs/8.jpg"/>
+							<ul data-type="captions">
+								<li class="caption caption11" data-effect="fade">
+									DEVELOPED WITH PURE
+								</li>
+								<li class="caption caption12" data-delay="300" data-effect="fade">
+									object oriented javascript
+								</li>
+							</ul>
+						</li>
+						<li data-delay="6" data-trans3d="tr52,tr16,tr60" data-trans2d="tr28,tr5,tr38">
+							<img src="cute-theme/blank.jpg" data-src="images/9.jpg" data-thumb="images/thumbs/9.jpg"/>
+							<ul data-type="captions">
+								<li class="caption caption13" data-effect="fade">
+									advanced javascript api considered
+								</li>
+								<li class="caption caption14" data-delay="150" data-effect="fade">
+									SIMPLE CLEAN &amp; VALID MARKUP
+								</li>
+								<li class="caption caption15" data-delay="300" data-effect="fade">
+									<a href="/features.html" target="_blank" title="More features">More features</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul data-type="controls">			
+						<li data-type="captions"> </li>
+						<li data-type="link"> </li>
+						<li data-type="video"> </li>
+						<li data-type="slideinfo"> </li>
+						<li data-type="circletimer"> </li>
+						<li data-type="next"> </li>
+						<li data-type="previous"> </li>
+						<li data-type="slidecontrol"> </li>
+						<li data-type="bartimer"> </li>				
+					</ul>
+					
+				</div><div class="br-shadow"> <img src="cute-theme/shadow.png" /></div>
+				</div>
+			</section>
+			<div class="spliter"> </div>
+			
+			<div class="spliter"> </div>
+			<footer class="footer">
+				<nav>
+					<ul class="footerNav">
+						<li><a href="?p=home">Home</a></li>
+						<li class="navsp"> </li>
+						<li><a href="?p=templates">Templates</a></li>
+						<li class="navsp"> </li>
+						<li><a href="http://codecanyon.net/item/cute-slider-3d-2d-html5-image-slider/discussion/3046001?ref=averta" target="_blank">Support</a></li>
+						<li class="navsp"> </li>
+						<li><a href="http://codecanyon.net/item/cute-slider-3d-2d-html5-image-slider/3046001?ref=averta" target="_blank">Purchase</a></li>
+					</ul>
+				</nav>
+				<p>
+					Copyright &copy; 2012 Averta. All rights reserved.
+				</p>
+			</footer>
+		</div>
+	</body>
+	<!-- Place this tag after the last +1 button tag. -->
+	<script type="text/javascript">
+	  (function() {
+		var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		po.src = 'https://apis.google.com/js/plusone.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>
+	<script>
+	
+		function getQueryString() {
+		  var result = {}, queryString = location.search.substring(1),
+		      re = /([^&=]+)=([^&]*)/g, m;
+		
+		  while (m = re.exec(queryString)) {
+		    result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+		  }
+		
+		  return result;
+		}
+
+		if(getQueryString()["t"] == '2d')
+		    document.getElementById('cute-slider').setAttribute('data-force' , '2d');
+		
+		var slider = new Cute.Slider();
+		slider.setup('cute-slider' ,  'slider-wrapper');
+		
+		if(self !== top)document.getElementById('alert').style.display = 'block';
+
+		// Master Slider Badge
+		var badge = document.getElementById('badge');
+		setTimeout(function(){
+			badge.className = "badge";
+		} , 3500);
+
+
+	</script>
+</html>
